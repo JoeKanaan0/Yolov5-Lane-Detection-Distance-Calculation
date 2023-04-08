@@ -11,11 +11,11 @@ Open your browser and search anaconda download or use this URL “https://www.an
 After downloading it you can run the .exe file to install it on your system and check all boxes on the page where there are 4 boxes except for the one that says, “Add to your PATH”. 
 After installing anaconda, open up your window search and type anaconda, and you should see “anaconda prompt”, click it and a terminal similar to the command prompt should pop up. You should see something like:
 
-		(base) C:\Users\user>
+	(base) C:\Users\user>
 
 After that you need to create a virtual environment where you will run your project from, first you need to run the command:
 
-	    	conda create -n yolov5 python=3.8
+	conda create -n yolov5 python=3.8
 
 
 The command prompt will ask you to input N or Y, press Y and hit enter.
@@ -25,7 +25,7 @@ Note: you can choose a different name than yolov5 but it’s a good choice to al
 
 After you’ve created your environment you need to activate it. To do so run the command:
 
-		conda activate yolov5
+	conda activate yolov5
 
 After running this command you should see something like this
 
@@ -49,14 +49,14 @@ The steps after this will be the same if you either are using the command prompt
 
 Step 1: In the command prompt/anaconda prompt, use the command: 
 
-				cd "{project_path}"
+	cd "{project_path}"
 
 Replace {project_path} by the path of the yolov5 folder. To get the path you could click on the folder and in the top bar you can see the path, click it and hit CTRL + C to copy it and then go to your prompt and type cd, then a space, then CTRL + V to paste it. And then hit enter. After doing that the path should no longer be C:\Users\user> but rather, the path of your folder.
 
 
 Step 2: Make sure you're on the right path, type the command: 
 
-					dir
+	dir
 
 You should see something like:
 
@@ -116,7 +116,7 @@ Step 3: You also need to install the required packages that yolov5 uses to run t
 you need to run the command: 
 
 
-				pip install -r requirements.txt
+	pip install -r requirements.txt
 
 
 This will take sometime because there are alot of packages that yolov5 requires.
@@ -124,7 +124,7 @@ This will take sometime because there are alot of packages that yolov5 requires.
 
 Step 5: After you've installed all the necessary libraries, you need to run the model on the video, to do that you use this command:
 
-				python track.py --source "{video_path}" --show-vid --save-vid
+	python track.py --source "{video_path}" --show-vid --save-vid
 
 
 Here the video_path is the path of the video mp4 file.
