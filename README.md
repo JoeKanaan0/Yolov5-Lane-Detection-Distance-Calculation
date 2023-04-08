@@ -144,7 +144,7 @@ using the "cd" command and run one of the commands in Step 5. (If you're using a
 beforehand).
 
 
-Final Note: The model was trained on the test1 video so the model will perform best on videos that are similar to it. Each video has
+Final Note: The model was trained on the test_sample video inside the yolov5 folder so the model will perform best on videos that are similar to it. Each video has
 it's own specific camera configurations and would produce different results. And the lanes in each video might not be detected well 
 depending on the lane visibility, camera quality, and many other factors. The warning system also currently displays a warning for
 any object that's closer than 1 meter no matter if it's infront of it or not. If you want to make it only display a warning when
